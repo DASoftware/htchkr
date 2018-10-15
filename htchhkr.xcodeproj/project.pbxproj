@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9AF216B3C249CDFAE95E7BE0 /* Pods_htchhkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D42185CEDC6095CAF71D8FD /* Pods_htchhkr.framework */; };
+		A13451062174878C00CA1111 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13451052174878C00CA1111 /* Constants.swift */; };
 		A139F9DD215CAEA50051E9AD /* PassengerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139F9DC215CAEA50051E9AD /* PassengerAnnotation.swift */; };
 		A139F9DF215CE4FA0051E9AD /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139F9DE215CE4FA0051E9AD /* UIViewControllerExt.swift */; };
 		A139F9E1215CFDF10051E9AD /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139F9E0215CFDF10051E9AD /* Alertable.swift */; };
@@ -39,6 +40,7 @@
 		3A74BFBAAAA3F259F7AAA777 /* Pods-htchhkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htchhkr.debug.xcconfig"; path = "Target Support Files/Pods-htchhkr/Pods-htchhkr.debug.xcconfig"; sourceTree = "<group>"; };
 		4D42185CEDC6095CAF71D8FD /* Pods_htchhkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_htchhkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8982FAC35FBF6B41A30D41 /* Pods-htchhkr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htchhkr.release.xcconfig"; path = "Target Support Files/Pods-htchhkr/Pods-htchhkr.release.xcconfig"; sourceTree = "<group>"; };
+		A13451052174878C00CA1111 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A139F9DC215CAEA50051E9AD /* PassengerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerAnnotation.swift; sourceTree = "<group>"; };
 		A139F9DE215CE4FA0051E9AD /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		A139F9E0215CFDF10051E9AD /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A13451042174876C00CA1111 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A13451052174878C00CA1111 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A16020442153CF2000FFEE45 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		A160204F2153CF2100FFEE45 /* htchhkr */ = {
 			isa = PBXGroup;
 			children = (
+				A13451042174876C00CA1111 /* Resources */,
 				A16020DB2157D94700FFEE45 /* Services */,
 				A16020D9215535D200FFEE45 /* GoogleService-Info.plist */,
 				A16020D221551FC700FFEE45 /* Extensions */,
@@ -318,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16020D12154E73E00FFEE45 /* CenterVCDelegate.swift in Sources */,
+				A13451062174878C00CA1111 /* Constants.swift in Sources */,
 				A16020DD2157D95C00FFEE45 /* DataService.swift in Sources */,
 				A139F9DF215CE4FA0051E9AD /* UIViewControllerExt.swift in Sources */,
 				A16020CA2154DB4600FFEE45 /* RoundedShadowButton.swift in Sources */,

@@ -52,7 +52,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                                 DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: false)
                             } else {
                                 // Driver.
-                                let userData = ["provider": user.providerID, "userIsDriver": true, "isPickupModeEnabled": false, "driverIsOnTrip": false] as [String: Any]
+                                let userData = ["provider": user.providerID, USER_IS_DRIVER: true, ACCOUNT_PICKUP_MODE_ENABLED: false, DRIVER_IS_ON_TRIP: false] as [String: Any]
                                 DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: true)
                             }
                             
@@ -63,12 +63,12 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                         if let errorCode = AuthErrorCode(rawValue: error!._code) {
                             switch errorCode {
                             case .wrongPassword:
-                                self.showAlert("Wrong password")
+                                self.showAlert(ERR_MSG_WRONG_PASSWORD)
                             default:
-                                self.showAlert("Unexpected error occured.")
+                                self.showAlert(ERR_MSG_UNEXPECTED)
                             }
                             
-                            self.signuoLoginBtn.animateButton(shouldLoad: false, withMessage: "Sign Up / Login")
+                            self.signuoLoginBtn.animateButton(shouldLoad: false, withMessage: MSG_SIGNUP_SIGN_IN)
                         }
                         
                         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -76,11 +76,11 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                                 if let errorCode = AuthErrorCode(rawValue: error!._code) {
                                     switch errorCode {
                                     case .emailAlreadyInUse:
-                                        self.showAlert("Email exist please type a different one")
+                                        self.showAlert(ERR_MSG_EMAIL_ALREADY_IN_USE)
                                     case .invalidEmail:
-                                        self.showAlert("Email is invalid")
+                                        self.showAlert(ERR_MSG_INVALID_EMAIL)
                                     default:
-                                        self.showAlert("Unexpected error occured.")
+                                        self.showAlert(ERR_MSG_UNEXPECTED)
                                     }
                                 }
                             } else {
@@ -94,7 +94,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                                         DataService.instance.createFirebaseDBUser(uid: uid, userData: userData, isDriver: false)
                                     } else {
                                         // Driver.
-                                        let userData = ["provider": providerId, "userIsDriver": true, "isPickupModeEnabled": false, "driverIsOnTrip": false] as [String: Any]
+                                        let userData = ["provider": providerId, USER_IS_DRIVER: true, ACCOUNT_PICKUP_MODE_ENABLED: false, DRIVER_IS_ON_TRIP: false] as [String: Any]
                                         DataService.instance.createFirebaseDBUser(uid: uid, userData: userData, isDriver: true)
                                     }
                                 }

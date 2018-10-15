@@ -181,15 +181,15 @@ extension ContainerVC: CenterVCDelegate {
 private extension UIStoryboard {
     
     class func mainStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
+        return UIStoryboard(name: MAIN_STORYBOARD, bundle: Bundle.main)
     }
     
     class func leftViewController() -> LeftSidePanelVC? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "LeftSidePanelVC") as? LeftSidePanelVC
+        return mainStoryboard().instantiateViewController(withIdentifier: VC_LEFT_PANEL) as? LeftSidePanelVC
     }
     
     class func homeViewController() -> HomeVC? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "HomeVC") as? HomeVC
+        return mainStoryboard().instantiateViewController(withIdentifier: VC_HOME) as? HomeVC
     }
     
     
