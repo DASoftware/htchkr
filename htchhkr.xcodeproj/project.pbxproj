@@ -30,7 +30,6 @@
 		A16020D421551FD900FFEE45 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16020D321551FD900FFEE45 /* UIViewExt.swift */; };
 		A16020D62155252700FFEE45 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16020D52155252700FFEE45 /* LoginVC.swift */; };
 		A16020D82155266900FFEE45 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16020D72155266900FFEE45 /* RoundedCornerTextField.swift */; };
-		A16020DA215535D200FFEE45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A16020D9215535D200FFEE45 /* GoogleService-Info.plist */; };
 		A16020DD2157D95C00FFEE45 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16020DC2157D95C00FFEE45 /* DataService.swift */; };
 		A16020DF215B5AED00FFEE45 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16020DE215B5AED00FFEE45 /* UpdateService.swift */; };
 		A16020E1215B5FE500FFEE45 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16020E0215B5FE500FFEE45 /* DriverAnnotation.swift */; };
@@ -64,7 +63,6 @@
 		A16020D321551FD900FFEE45 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		A16020D52155252700FFEE45 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A16020D72155266900FFEE45 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
-		A16020D9215535D200FFEE45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A16020DC2157D95C00FFEE45 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A16020DE215B5AED00FFEE45 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
 		A16020E0215B5FE500FFEE45 /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 			children = (
 				A13451042174876C00CA1111 /* Resources */,
 				A16020DB2157D94700FFEE45 /* Services */,
-				A16020D9215535D200FFEE45 /* GoogleService-Info.plist */,
 				A16020D221551FC700FFEE45 /* Extensions */,
 				A16020CF2154E72B00FFEE45 /* Protocols */,
 				A16020C02154CF2F00FFEE45 /* Controller */,
@@ -268,7 +265,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A160205B2153CF3100FFEE45 /* LaunchScreen.storyboard in Resources */,
-				A16020DA215535D200FFEE45 /* GoogleService-Info.plist in Resources */,
 				A16020582153CF3100FFEE45 /* Assets.xcassets in Resources */,
 				A16020562153CF2100FFEE45 /* Main.storyboard in Resources */,
 			);
